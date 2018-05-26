@@ -41,28 +41,12 @@ public final class Tokens {
 		// NB: Prevent instantiation of utility class.
 	}
 
-	public static boolean isNumber(final Object o) {
-		return o instanceof Number;
-	}
-
 	public static boolean isGroup(final Object o) {
 		return o instanceof Group;
 	}
 
-	public static boolean isVariable(final Object o) {
-		return o instanceof Variable;
-	}
-
 	public static boolean isOperator(final Object o) {
 		return o instanceof Operator;
-	}
-
-	public static boolean isComma(final Object o) {
-		return isCharacter(o, ',');
-	}
-
-	public static boolean isCharacter(final Object o, final Character c) {
-		return o instanceof Character && ((Character) o).equals(c);
 	}
 
 	public static boolean isMatchingGroup(final Object o, final Group g) {
